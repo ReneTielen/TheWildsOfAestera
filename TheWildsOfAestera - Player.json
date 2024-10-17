@@ -11,23 +11,5 @@
 		]
 	},
 	"item": [
-		{
-			"name": "Cartographer's Map",
-			"wondrous": true,
-			"reqAttune": false,
-			"weight": 1,
-			"rarity": "uncommon", 
-			"source": "Aestera",
-			"entries": [
-				"This magical map automatically maps any major features of the terrain that the person carrying the map can see. (e.g. rivers, forests, mountains, hills, ravines etc.",
-				"Once per day, the user can choose to add a marker for a specific location they can see. This ability resets daily at dawn.",
-				"Using the map gives the user advantage on any survival checks made to navigate through natural (non-magical) terrain toward a mapped landmark (i.e. a marker or terrain feature)."
-			],
-			"fluff": {
-				"entries": [
-					""
-				]
-			}
-		}
 	]
 }
