@@ -10,6 +10,22 @@
 			}
 		]
 	},
-	"item": [
+	"item": [ 
+		{
+			"name": "Horn of Silent Alarm",
+			"wondrous": true,
+			"reqAttune": false,
+			"weight": 1,
+			"rarity": "common",
+			"source": "Aestera",
+			"entries": [
+				"This horn has 3 charges. When you use an action to blow it, one creature of your choice can hear the horn's blare, provided the creature is within 600 feet of the horn and not deafened. No other creature hears sound coming from the horn. The horn regains its expended charges daily at dawn."
+			],
+			"fluff": {
+				"entries": [
+					""
+				]
+			}
+		}
 	]
 }
