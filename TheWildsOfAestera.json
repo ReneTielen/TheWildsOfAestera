@@ -178,7 +178,7 @@
 			]
 		},
 		{
-			"name": "Annabel Mudsoother (Swamp Hag)",
+			"name": "Annabel Mudsoother (Fate Hag)",
 			"source": "Aestera",
 			"size": [
 				"M"
@@ -197,8 +197,8 @@
 				}
 			],
 			"hp": {
-				"formula": "17d8 + 17",
-				"average": 93
+				"formula": "20d8 + 20",
+				"average": 110
 			},
 			"speed": {
 				"walk": 30
@@ -280,7 +280,7 @@
 				{
 					"name": "Shears",
 					"entries": [
-						"{@atk mw} {@hit 6} to hit, reach 5 ft., one target. {@h}8 ({@damage 1d8 + 4}) force damage. If the target is a creature, it has disadvantage on attack rolls until the end of the hag's next turn."
+						"{@atk mw} {@hit 6} to hit, reach 5 ft., one target. {@h}18 ({@damage 3d8 + 4}) force damage. If the target is a creature, it has disadvantage on attack rolls until the end of the hag's next turn."
 					]
 				}
 			],
@@ -354,9 +354,15 @@
 				"acid",
 				"poison"
 			],
+			"uniqueId": "34327b37-e4e6-4227-9ed6-f931ea91d28c",
+			"legendaryHeader": [
+				"Annabel can take 3 legendary actions, choosing from the options below. Only one legendary action can be used at a time and only at the end of another creature's turn. The hag regains spent legendary actions at the start of its turn."
+			],
 			"environment": [
+				"forest",
 				"swamp"
 			],
+			"isNpc": true,
 			"damageTags": [
 				"O"
 			],
@@ -371,6 +377,311 @@
 			"savingThrowForcedSpell": [
 				"charisma",
 				"wisdom"
+			]
+		},
+		{
+			"name": "Minotaur King",
+			"size": [
+				"L"
+			],
+			"type": {
+				"type": "fiend",
+				"note": "(Demon)"
+			},
+			"source": "Aestera",
+			"alignment": [
+				"N",
+				"E"
+			],
+			"ac": [
+				{
+					"ac": 15,
+					"from": [
+						"natural armor"
+					]
+				}
+			],
+			"hp": {
+				"formula": "10d10 + 30",
+				"average": 85
+			},
+			"speed": {
+				"walk": 40
+			},
+			"str": 18,
+			"dex": 13,
+			"con": 16,
+			"int": 11,
+			"wis": 14,
+			"cha": 14,
+			"passive": 14,
+			"cr": "4",
+			"senses": [
+				"darkvision 60 ft."
+			],
+			"senseTags": [
+				"D"
+			],
+			"languages": [
+				"Abyssal",
+				"Draconic"
+			],
+			"languageTags": [
+				"AB",
+				"DR"
+			],
+			"save": {
+				"str": "+6",
+				"con": "+5"
+			},
+			"skill": {
+				"perception": "+4",
+				"athletics": "+6"
+			},
+			"resist": [
+				"necrotic"
+			],
+			"action": [
+				{
+					"name": "Multiattack",
+					"entries": [
+						"The Minotaur King makes 2 attacks. Either 2 Greataxe attacks or 1 Gore attack and 1 Greataxe attack."
+					]
+				},
+				{
+					"name": "Greataxe",
+					"entries": [
+						"{@atk mw} {@hit 6} to hit, reach 5 ft., one target. {@h}10 ({@damage 1d12 + 4} ) slashing damage plus 4 ({@damage 1d6}) fire damage."
+					]
+				},
+				{
+					"name": "Gore",
+					"entries": [
+						"{@atk mw} {@hit 6} to hit, reach 5 ft., one target. {@h}9 ({@damage 1d8 + 4}) piercing damage."
+					]
+				}
+			],
+			"actionTags": [
+				"Multiattack"
+			],
+			"miscTags": [
+				"MW",
+				"MLW"
+			],
+			"attachedItems": [
+				"greataxe|phb"
+			],
+			"trait": [
+				{
+					"name": "Charge",
+					"entries": [
+						"If the minotaur moves at least 10 feet straight toward a target and then hits it with a gore attack on the same turn, must succeed on a {@dc 14} Strength saving throw or be pushed up to 10 feet away and knocked {@condition prone}."
+					]
+				},
+				{
+					"name": "Reckless",
+					"entries": [
+						"At the start of its turn, the minotaur can gain advantage on all melee weapon attacks it makes during that turn, but attack rolls against it have advantage until the start of its next turn."
+					]
+				}
+			],
+			"conditionInflict": [
+				"prone"
+			],
+			"traitTags": [
+				"Charge",
+				"Reckless"
+			],
+			"fluff": {
+				"entries": [
+					"Placeholder flavor text"
+				],
+				"images": [
+					{
+						"type": "image",
+						"href": {
+							"type": "external",
+							"url": "https://5e.tools/img/bestiary/MM/Minotaur.webp"
+						}
+					}
+				]
+			},
+			"tokenHref": {
+				"type": "external",
+				"url": "https://5e.tools/img/bestiary/tokens/MM/Minotaur.webp"
+			},
+			"damageTags": [
+				"N",
+				"P"
+			],
+			"savingThrowForced": [
+				"strength"
+			]
+		},		
+		{
+			"name": "Fire Hellion",
+			"source": "Aestera",
+			"size": [
+				"H"
+			],
+			"type": {
+				"type": "fiend",
+				"tags": [
+					"devil"
+				]
+			},
+			"alignment": [
+				"L",
+				"E"
+			],
+			"alignmentPrefix": "typically ",
+			"ac": [
+				{
+					"ac": 18,
+					"from": [
+						"{@item plate armor|PHB|plate}"
+					]
+				}
+			],
+			"hp": {
+				"average": 175,
+				"formula": "14d12 + 84"
+			},
+			"speed": {
+				"walk": 30
+			},
+			"str": 25,
+			"dex": 10,
+			"con": 23,
+			"int": 16,
+			"wis": 14,
+			"cha": 21,
+			"save": {
+				"wis": "+6",
+				"cha": "+9"
+			},
+			"skill": {
+				"arcana": "+7",
+				"athletics": "+11",
+				"perception": "+6"
+			},
+			"senses": [
+				"darkvision 120 ft."
+			],
+			"passive": 16,
+			"immune": [
+				"fire"
+			],
+			"conditionImmune": [
+				"charmed",
+				"frightened"
+			],
+			"languages": [
+				"Common",
+				"Giant",
+				"Infernal"
+			],
+			"cr": "11",
+			"trait": [
+				{
+					"name": "Magic Resistance",
+					"entries": [
+						"The hellion has advantage on saving throws against spells and other magical effects."
+					]
+				},
+				{
+					"name": "Soul Taker",
+					"entries": [
+						"A Giant or a Humanoid that is reduced to 0 hit points by the hellion dies, and its soul rises as a lemure (see the Monster Manual) on Avernus, one of the Nine Hells, in {@dice 1d4} hours. If the creature isn't revived before then, it can be restored to life only by a {@spell wish} spell or by killing the lemure and casting true resurrection on the creature's original body."
+					]
+				}
+			],
+			"action": [
+				{
+					"name": "Multiattack",
+					"entries": [
+						"The hellion makes two Morningstar attacks."
+					]
+				},
+				{
+					"name": "Morningstar",
+					"entries": [
+						"{@atk mw} {@hit 11} to hit, reach 10 ft., one target. {@h}20 ({@damage 3d8 + 7}) piercing damage plus 11 ({@damage 2d10}) fire damage. If the target is a creature, it can't regain hit points until the start of the hellion's next turn."
+					]
+				},
+				{
+					"name": "Infernal Orb",
+					"entries": [
+						"The hellion hurls a magical ball of fire that explodes in a 20-foot-radius sphere centered on a point the hellion can see within 120 feet of itself. The sphere spreads around corners. Each creature in that area must make a {@dc 17} Dexterity saving throw. A creature takes 18 ({@damage 4d8}) fire damage and 18 ({@damage 4d8}) necrotic damage on a failed save, or half as much damage on a successful one."
+					]
+				}
+			],
+			"attachedItems": [
+				"morningstar|phb"
+			],
+			"traitTags": [
+				"Magic Resistance"
+			],
+			"senseTags": [
+				"SD"
+			],
+			"actionTags": [
+				"Multiattack"
+			],
+			"languageTags": [
+				"C",
+				"GI",
+				"I"
+			],
+			"miscTags": [
+				"MW",
+				"RCH",
+				"MLW",
+				"AOE"
+			],
+			"hasFluff": true,
+			"hasFluffImages": true,
+			"token": {
+				"name": "Fire Hellion",
+				"source": "BGG"
+			},
+			"fluff": {
+				"name": "Fire Hellion",
+				"source": "BGG",
+				"entries": [
+					{
+						"type": "quote",
+						"entries": [
+							"To my mind, the fire hellion perfectly illustrates the difference between natural fire and the corrupt flames of the Nine Hells."
+						],
+						"by": "Bigby"
+					},
+					{
+						"type": "entries",
+						"entries": [
+							"Fire giants study war in its many forms across the multiverse, which sometimes leads the giants to a fascination with the Blood War—the endless conflict between demons and devils across the Lower Planes. Such a giant might enter into a pact with a powerful devil, hoping to learn tactics the devils have fine-tuned over millennia and to acquire magical gifts to help the giant rise in the ordning.",
+							"Over time, the giant is corrupted, becoming a Fiend in its own right. The devil teaches the giant how to forge with infernal iron and hellfire, enabling the giant to craft weapons that can funnel the souls of the slain to Avernus, the first layer of the Nine Hells. In this way, the devil stands to gain a constant supply of souls from the giant's enemies, as well as the promise that the giant will serve the devil as a smith in the Nine Hells after death.",
+							"The corrupted fire giant takes on fiendish features, including horns, cloven hooves for feet, and a forked tail."
+						]
+					}
+				],
+				"images": [
+					{
+						"type": "image",
+						"href": {
+							"type": "internal",
+							"path": "bestiary/BGG/Fire Hellion.webp"
+						}
+					}
+				]
+			},
+			"damageTags": [
+				"F",
+				"N",
+				"P"
+			],
+			"savingThrowForced": [
+				"dexterity"
 			]
 		}
 	],
@@ -407,6 +718,63 @@
 					""
 				]
 			}
+		},{
+			"name": "Mirror cage of the Fire Hellion",
+			"wondrous": true,
+			"reqAttune": true,
+			"weight": 1,
+			"rarity": "artifact",
+			"curse": true,
+			"source": "Aestera",
+			"entries": [
+				"This mithril mirror was forged under the light of [name of the moon]. Its handle embedded with fine engravings of spiral patterns. On the back a large gem in the shape of a crescent moon.",
+				"Trapped inside this magical mirror is The Fire Hellion, a demon from the Abyss. The mirror has an AC of 11 and 10 hit points. If its hit points are reduced to zero, the mirror shatters, releasing the Fire Hellion trapped inside.",
+				{
+					"type": "entries",
+					"name": "Curse",
+					"entries": [
+						"This mirror is cursed, and becoming attuned to it extends the curse to you. As long as you remain cursed, your soul is bound to the mirror and you feel the urge to prevent the mirror from shattering at all cost. You are attuned to the mirror for the entire duration of your life. Upon death, your soul will remain trapped in the same plane of existence as the mirror, unable to depart to the afterlife. Because of this, you cannot be ressurected. The curse can be broken in two ways, either another creature attunes to the mirror or the demon inside the mirror is slain."
+					]
+				},
+				{
+					"type": "entries",
+					"name": "Into the Fire",
+					"entries": [
+						"By performing a 10 minute ritual, you can take yourself and up to 5 willing creatures into the mirrors demiplane in which the Fire Hellion is trapped. You can only return to the material plane by defeating the demon trapped inside. Defeating the demon will remove the curse from this item."
+					]
+				},
+				{
+					"type": "entries",
+					"name": "Wrath of the Fire Hellion",
+					"entries": [
+						"As a bonus action, you let the rage of the Fire Hellion take over control of your body. Until the start of your next turn, you take on the shape and the statistics of the Fire Hellion. After returning to your original form, you take two points of exhaustion and are not able to use this feature again for one week."
+					]
+				}
+			],
+			"fluff": {
+				"entries": [
+					""
+				]
+			}
+		},{
+			"name": "Greataxe of the Minotaur King",
+			"source": "Aestera",
+			"baseItem": "greataxe|PHB",
+			"type": "M",
+			"rarity": "uncommon",
+			"weight": 7,
+			"weaponCategory": "martial",
+			"property": [
+				"H",
+				"2H"
+			],
+			"dmg1": "1d12",
+			"dmgType": "S",
+			"bonusWeapon": "+1",
+			"entries": [
+				"You gain a +1 bonus to attack and damage rolls made with this magic greataxe while you have half your hit points or fewer.",
+				"When you hit a creature with this greataxe, you deal an extra 1d6 fire damage."
+			]
 		}
 	]
 }
