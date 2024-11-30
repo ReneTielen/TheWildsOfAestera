@@ -522,7 +522,7 @@
 			"name": "Fire Hellion",
 			"source": "Aestera",
 			"size": [
-				"H"
+				"L"
 			],
 			"type": {
 				"type": "fiend",
@@ -727,7 +727,7 @@
 			"curse": true,
 			"source": "Aestera",
 			"entries": [
-				"This mithril mirror was forged under the light of [name of the moon]. Its handle embedded with fine engravings of spiral patterns. On the back a large gem in the shape of a crescent moon.",
+				"This mithril mirror was forged under the light of Celenia. Its handle embedded with fine engravings of spiral patterns. On the back a large gem in the shape of a crescent moon.",
 				"Trapped inside this magical mirror is The Fire Hellion, a demon from the Abyss. The mirror has an AC of 11 and 10 hit points. If its hit points are reduced to zero, the mirror shatters, releasing the Fire Hellion trapped inside.",
 				{
 					"type": "entries",
@@ -773,8 +773,53 @@
 			"bonusWeapon": "+1",
 			"entries": [
 				"You gain a +1 bonus to attack and damage rolls made with this magic greataxe while you have half your hit points or fewer.",
-				"When you hit a creature with this greataxe, you deal an extra 1d6 fire damage."
+				"When you hit a creature with this greataxe, you deal an extra {@damage 1d6} fire damage."
+			]
+		},{
+			"name": "Boots of the Shadows",
+			"wondrous": true,
+			"reqAttune": true,
+			"weight": 1,
+			"rarity": "uncommon",
+			"source": "Aestera",
+			"entries": [
+				"While wearing these boots, your steps make no sound when walking in the shadows (dim light or darkness), regardless of the surface you are moving across. You also have advantage on Dexterity (Stealth) checks.",
+				"Once per day, you can cast {@spell Longstrider} at first level using these boots. This ability resets daily at dawn."
+			]
+		},{
+			"name": "Monocle of Identification",
+			"wondrous": true,
+			"reqAttune": true,
+			"weight": 1,
+			"rarity": "uncommon",
+			"source": "Aestera",
+			"entries": [
+				"While waring this monocle, you gain proficiency in the Investigation and Arcana. You also have advantage on Intelligence (Investigation, Arcana) checks.",
+				"Once per day, you can cast {@spell Identify} using this monocle without the need of any material components. This ability resets daily at dawn."
+			]
+		},{
+			"name": "Circlet of Scorching",
+			"wondrous": true,
+			"reqAttune": true,
+			"weight": 1,
+			"rarity": "uncommon",
+			"source": "Aestera",
+			"entries": [
+				"While wearing this this circlet, you become resistant to fire damage.",
+				"Once per day, you can cast {@spell Scorching Ray} using the circlet. This ability resets daily at dawn."
+			]
+		},{
+			"name": "Bracers of the Forest",
+			"wondrous": true,
+			"reqAttune": true,
+			"weight": 1,
+			"rarity": "uncommon",
+			"source": "Aestera",
+			"entries": [
+				"You have a +1 bonus to AC while wearing these bracers.",
+				"Once per day, while Wildshaped as a beast of CR 1 or higher, you can cast {@spell Hunter's Mark|XPHB} without the need for verbal components."
 			]
 		}
+		
 	]
 }
