@@ -806,7 +806,7 @@
 			"source": "Aestera",
 			"entries": [
 				"While wearing this this circlet, you become resistant to fire damage.",
-				"Once per day, you can cast {@spell Scorching Ray} using the circlet. This ability resets daily at dawn."
+				"Once per day, you can cast {@spell Fireball} at 3rd level using the circlet. This ability resets daily at dawn."
 			]
 		},{
 			"name": "Bracers of the Forest",

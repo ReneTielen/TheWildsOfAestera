@@ -26,6 +26,107 @@
 					""
 				]
 			}
+		},{
+			"name": "Mirror cage of the Fire Hellion",
+			"wondrous": true,
+			"reqAttune": true,
+			"weight": 1,
+			"rarity": "artifact",
+			"curse": true,
+			"source": "Aestera",
+			"entries": [
+				"This mithril mirror was forged under the light of Celenia. Its handle embedded with fine engravings of spiral patterns. On the back a large gem in the shape of a crescent moon.",
+				"Trapped inside this magical mirror is The Fire Hellion, a demon from the Abyss. The mirror has an AC of 11 and 10 hit points. If its hit points are reduced to zero, the mirror shatters, releasing the Fire Hellion trapped inside.",
+				{
+					"type": "entries",
+					"name": "Curse",
+					"entries": [
+						"This mirror is cursed, and becoming attuned to it extends the curse to you. As long as you remain cursed, your soul is bound to the mirror and you feel the urge to prevent the mirror from shattering at all cost. You are attuned to the mirror for the entire duration of your life. Upon death, your soul will remain trapped in the same plane of existence as the mirror, unable to depart to the afterlife. Because of this, you cannot be ressurected. The curse can be broken in two ways, either another creature attunes to the mirror or the demon inside the mirror is slain."
+					]
+				},
+				{
+					"type": "entries",
+					"name": "Into the Fire",
+					"entries": [
+						"By performing a 10 minute ritual, you can take yourself and up to 5 willing creatures into the mirrors demiplane in which the Fire Hellion is trapped. You can only return to the material plane by defeating the demon trapped inside. Defeating the demon will remove the curse from this item."
+					]
+				},
+				{
+					"type": "entries",
+					"name": "Wrath of the Fire Hellion",
+					"entries": [
+						"As a bonus action, you let the rage of the Fire Hellion take over control of your body. Until the start of your next turn, you take on the shape and the statistics of the Fire Hellion. After returning to your original form, you take two points of exhaustion and are not able to use this feature again for one week."
+					]
+				}
+			],
+			"fluff": {
+				"entries": [
+					""
+				]
+			}
+		},{
+			"name": "Greataxe of the Minotaur King",
+			"source": "Aestera",
+			"baseItem": "greataxe|PHB",
+			"type": "M",
+			"rarity": "uncommon",
+			"weight": 7,
+			"weaponCategory": "martial",
+			"property": [
+				"H",
+				"2H"
+			],
+			"dmg1": "1d12",
+			"dmgType": "S",
+			"bonusWeapon": "+1",
+			"entries": [
+				"You gain a +1 bonus to attack and damage rolls made with this magic greataxe while you have half your hit points or fewer.",
+				"When you hit a creature with this greataxe, you deal an extra {@damage 1d6} fire damage."
+			]
+		},{
+			"name": "Boots of the Shadows",
+			"wondrous": true,
+			"reqAttune": true,
+			"weight": 1,
+			"rarity": "uncommon",
+			"source": "Aestera",
+			"entries": [
+				"While wearing these boots, your steps make no sound when walking in the shadows (dim light or darkness), regardless of the surface you are moving across. You also have advantage on Dexterity (Stealth) checks.",
+				"Once per day, you can cast {@spell Longstrider} at first level using these boots. This ability resets daily at dawn."
+			]
+		},{
+			"name": "Monocle of Identification",
+			"wondrous": true,
+			"reqAttune": true,
+			"weight": 1,
+			"rarity": "uncommon",
+			"source": "Aestera",
+			"entries": [
+				"While waring this monocle, you gain proficiency in the Investigation and Arcana. You also have advantage on Intelligence (Investigation, Arcana) checks.",
+				"Once per day, you can cast {@spell Identify} using this monocle without the need of any material components. This ability resets daily at dawn."
+			]
+		},{
+			"name": "Circlet of Scorching",
+			"wondrous": true,
+			"reqAttune": true,
+			"weight": 1,
+			"rarity": "uncommon",
+			"source": "Aestera",
+			"entries": [
+				"While wearing this this circlet, you become resistant to fire damage.",
+				"Once per day, you can cast {@spell Fireball} at 3rd level using the circlet. This ability resets daily at dawn."
+			]
+		},{
+			"name": "Bracers of the Forest",
+			"wondrous": true,
+			"reqAttune": true,
+			"weight": 1,
+			"rarity": "uncommon",
+			"source": "Aestera",
+			"entries": [
+				"You have a +1 bonus to AC while wearing these bracers.",
+				"Once per day, while Wildshaped as a beast of CR 1 or higher, you can cast {@spell Hunter's Mark|XPHB} without the need for verbal components."
+			]
 		}
 	]
 }
