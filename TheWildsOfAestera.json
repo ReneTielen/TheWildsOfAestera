@@ -683,6 +683,152 @@
 			"savingThrowForced": [
 				"dexterity"
 			]
+		},{
+			"name": "Twisted Shadow (Dweller)",
+			"size": [
+				"M"
+			],
+			"type": "undead",
+			"source": "Aestera",
+			"alignment": [
+				"N",
+				"E"
+			],
+			"ac": [
+				13
+			],
+			"hp": {
+				"formula": "8d10 + 8",
+				"average": 52
+			},
+			"speed": {
+				"walk": 30
+			},
+			"str": 6,
+			"dex": 16,
+			"con": 13,
+			"int": 6,
+			"wis": 12,
+			"cha": 8,
+			"passive": 11,
+			"cr": "4",
+			"senses": [
+				"darkvision 120 ft."
+			],
+			"senseTags": [
+				"SD"
+			],
+			"skill": {
+				"stealth": "+5"
+			},
+			"vulnerable": [
+				"radiant"
+			],
+			"resist": [
+				{
+					"resist": [
+						"bludgeoning",
+						"piercing",
+						"slashing"
+					],
+					"note": "from Nonmagical Attacks",
+					"cond": true
+				}
+			],
+			"immune": [
+				"necrotic",
+				"poison"
+			],
+			"conditionImmune": [
+				"exhaustion",
+				"frightened",
+				"grappled",
+				"paralyzed",
+				"petrified",
+				"poisoned",
+				"prone",
+				"restrained"
+			],
+			"trait": [
+				{
+					"name": "Amorphous",
+					"entries": [
+						"The twisted shadow (dweller) can move through a space as narrow as 1 inch wide without squeezing."
+					]
+				},
+				{
+					"name": "Shadow Stealth",
+					"entries": [
+						"While in dim light or darkness, the twisted shadow (dweller) can take the {@action Hide} action as a bonus action."
+					]
+				},
+				{
+					"name": "Sunlight Weakness",
+					"entries": [
+						"While in sunlight, the twisted shadow (dweller) has disadvantage on attack rolls, ability checks, and saving throws."
+					]
+				}
+			],
+			"traitTags": [
+				"Amorphous",
+				"Sunlight Sensitivity"
+			],
+			"action": [
+				{
+					"name": "Multiattack",
+					"entries": [
+						"The twisted shadow makes two shadow claw attacks."
+					]
+				},
+				{
+					"name": "Shadow Claw",
+					"entries": [
+						"{@atk mw} {@hit 5} to hit, reach 5 ft., one target. {@h}7 ({@damage 2d6}) cold damage."
+					]
+				},
+				{
+					"name": "Life Drain {@recharge 5}",
+					"entries": [
+						"{@atk ms} {@hit +3} to hit, reach 5 ft., one creature. {@h}10 ({@damage 3d6}) necrotic damage. The target must succeed on a {@dc 11} Constitution saving throw or its hit point maximum is reduced by an amount equal to half the damage taken (rounded up). This reduction lasts until the target finishes a long rest. The target dies if this effect reduces its hit point maximum to 0."
+					]
+				},
+				{
+					"name": "Whispers Of Dread {@recharge 5}",
+					"entries": [
+						"The twisted shadow releases a whisper of dread, provided that it isn't in sunlight. All creatures within 10 feet of it that can hear it must make a {@dc 13} Wisdom saving throw. On a failed save, a creature takes {{@damage 2d6}} psychic damage and becomes {@condition frightened} of the twisted shadow until the end of the twisted shadow's next turn. On a success, the creature takes half as much damage."
+					]
+				}
+			],
+			"miscTags": [
+				"MW",
+				"MA",
+				"HPR"
+			],
+			"conditionInflict": [
+				"frightened"
+			],
+			"actionTags": [
+				"Multiattack"
+			],
+			"fluff": {
+				"images": [
+					{
+						"type": "image",
+						"href": {
+							"type": "external",
+							"url": "https://www.dungeonsolvers.com/wp-content/uploads/2023/05/a-featureless-shadow-strangling-a-human-male-to-death.png"
+						}
+					}
+				]
+			},
+			"damageTags": [
+				"C",
+				"N"
+			],
+			"savingThrowForced": [
+				"constitution",
+				"wisdom"
+			]
 		}
 	],
 	"item": [
